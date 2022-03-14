@@ -2,13 +2,13 @@
 //one default export per module 
 // think of module as a file
 import React from 'react';
-import { name, ticket, person } from './data'
+import * as data from './data'
 
 const App = () => {
   return (
     <section>
-      <p> {name} is here with {ticket} </p>
-      <p>{person.name}</p>
+      <p> {data.name} is here with {data.ticket} </p>
+      <p>{data.person.name}</p>
     </section>)
 }
 
