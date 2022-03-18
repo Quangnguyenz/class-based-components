@@ -4,13 +4,13 @@
 import React, { Component } from 'react';
 import * as data from './data'
 import Banner from './components/Header/Banner'
+import Booklist from './Booklist';
 
 const App = () => {
   return (
     <section>
-      <p> {data.name} is here with {data.ticket} </p>
-      <p>{data.person.name}</p>
-      <Banner />
+      <h1>App</h1>
+      <Booklist />
     </section>)
 }
 
@@ -26,4 +26,4 @@ class AppClass extends Component {
   }
 }
 
-export default AppClass;
+export default App;
