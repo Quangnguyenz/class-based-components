@@ -3,10 +3,10 @@ import Book from "./Book";
 export default class Booklist extends Component {
     render() {
         return (
-            <article>
-                <h3>book:</h3>
-                <h5>author:</h5>
-            </article>
+            <section>
+                <h1>A book list</h1>
+                <Book />
+            </section>
         )
     }
 }
