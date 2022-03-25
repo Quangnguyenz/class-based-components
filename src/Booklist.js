@@ -4,24 +4,31 @@ export default class Booklist extends Component {
     state = {
         books: [
             {
+                id: 1,
                 book: "book 1",
                 author: "john doe"
             },
             {
-                book: "book 2",
-                author: "bobby doe"
-            }
+                id: 2,
+                book: "book 1",
+                author: "john doe"
+            },
+            {
+                id: 3,
+                book: "book 1",
+                author: "john doe"
+            },
+
         ]
     }
     // this.setState({})
     render() {
-        const books = this.state.books.map((item) => item.book);
+        // const books = this.state.books.map((item) => item.book);
 
         return (
             <section>
                 <h1>A book list</h1>
-                <Book book={this.state.books[0]} />
-                <Book book={this.state.books[1]} />
+                {this.state.books.map((item) => <Book info={item} key={item.id} />)}
             </section>
         )
     }
