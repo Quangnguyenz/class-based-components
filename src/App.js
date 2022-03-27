@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import * as data from './data'
 import Banner from './components/Header/Banner'
 import Booklist from './Booklist';
+import './App.css'
 
 const App = () => {
   return (

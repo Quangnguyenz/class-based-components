@@ -1,25 +1,14 @@
 import React, { Component } from 'react'
 import Book from "./Book";
+import booksData from "./bookData"
 export default class Booklist extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            books: booksData
+        }
+    }
     state = {
-        books: [
-            {
-                id: 1,
-                book: "book 1",
-                author: "john doe"
-            },
-            {
-                id: 2,
-                book: "book 1",
-                author: "john doe"
-            },
-            {
-                id: 3,
-                book: "book 1",
-                author: "john doe"
-            },
-
-        ]
     }
     // this.setState({})
     render() {
