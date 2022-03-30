@@ -8,8 +8,8 @@ export default class Booklist extends Component {
             books: booksData
         }
     }
-    state = {
-    }
+    // state = {
+    // }
     // this.setState({})
     render() {
         // const books = this.state.books.map((item) => item.book);
